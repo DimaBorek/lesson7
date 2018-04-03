@@ -4,16 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-    private static int getMinFromArray(int[] array){
-        int indexOfMin = 0;
-
+    private static int getMaxFromArray(int[] array){
+        int indexOfMax = 0;
         for (int i = 1; i < array.length ; i++) {
-            if (array[i]<array[indexOfMin]){
-                indexOfMin = i;
+            if (array[i]>array[indexOfMax]){
+                indexOfMax = i;
             }
 
         }
-        return array[indexOfMin];
+        return array[indexOfMax];
 
     }
     }
